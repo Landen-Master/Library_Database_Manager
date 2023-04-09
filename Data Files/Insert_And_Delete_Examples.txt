@@ -1,0 +1,55 @@
+/*
+Sample syntax for insertions
+*/
+
+/* Sample track insertion */
+--INSERT INTO TRACK VALUES (A, 'B', 'C', D, E, 'F');
+INSERT INTO TRACK VALUES (21, 'Frank’s Track', 'R&B', 38, 2016, 'The rings all, ring out, burn out, cave in, blackened, to dark out, I''m mixed now, fleshed out. There''s light with, no heat, we cooled out, it''s cool out. Life is, precious. We found out. We found out. We found out');
+
+/* Sample album insertion */
+--INSERT INTO ALBUM VALUES (A, 'B', C, D, 'E', F, G);
+INSERT INTO ALBUM VALUES (21, 'Led Zeppelin IV', 4, 19, 'Rock', 2540, 1971);
+
+/* Sample movie insertion */
+--INSERT INTO MOVIE VALUES (A, 'B', C, D, 'E', 'F', G, H);
+INSERT INTO MOVIE VALUES (21, 'Citizen Kane', 3, 8, 'PG', 'Drama', 7140, 1941);
+
+/* Sample audiobook insertion */
+--INSERT INTO AUDIOBOOK VALUES (A, 'B', C, D, 'E', F, G);
+INSERT INTO AUDIOBOOK VALUES (21, 'Don Quixote', 6, 10, 'Novel', 1000, 1605);
+
+/*Sample artist insertion */
+--INSERT INTO ARTIST VALUES (A, 'B', 'C', 'D');
+INSERT INTO ARTIST VALUES (21, 'Cher', NULL, NULL);
+
+/* Sample patron insertion */
+--INSERT INTO PATRON VALUES ('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H');
+INSERT INTO PATRON VALUES ('058427636', 'Leon', 'Madrid', 'madrid.1@osu.edu', null, null, null, null);
+
+/*
+Sample syntax for deletion
+*/
+
+/* Sample track deletion */
+--DELETE FROM TRACK WHERE Track_ID = X;
+DELETE FROM TRACK WHERE Track_ID = 21;
+
+/* Sample album deletion */
+--DELETE FROM ALBUM WHERE Album_ID = X;
+DELETE FROM ALBUM WHERE Album_ID = 21;
+
+/* Sample movie deletion */
+--DELETE FROM MOVIE WHERE Movie_ID = X;
+DELETE FROM MOVIE WHERE Movie_ID = 21;
+
+/* Sample audiobook deletion */
+--DELETE FROM AUDIOBOOK WHERE Audiobook_ID = X;
+DELETE FROM AUDIOBOOK WHERE Audiobook_ID = 21;
+
+/*Sample artist deletion */
+--DELETE FROM ARTIST WHERE Creator_No = X;
+DELETE FROM ARTIST WHERE Creator_No = 21;
+
+/* Sample patron deletion */
+--DELETE FROM PATRON WHERE Card_Number = X;
+DELETE FROM PATRON WHERE Card_Number = '058427636';

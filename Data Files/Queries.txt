@@ -1,0 +1,150 @@
+--Finds the titles of all tracks by ARTIST released before YEAR
+--From II.2.a, media item queries
+SELECT TRACK.Name
+FROM TRACK, ARTIST, ARTIST_SONG
+WHERE TRACK.Track_ID = ARTIST_SONG.Track_ID
+AND ARTIST_SONG.Creator_No = ARTIST.Creator_No
+AND Year < SPYEAR AND ARTIST.Creator_No = SPART
+GROUP BY Name;
+--SPART is the specified creator number
+--SPYEAR is the specified year
+
+--Gives all the movies and their date of their checkout from a single patron
+--From II.2.c, checked out movie queries
+SELECT MOVIE.Name, CHECK_OUT.Due_Date
+FROM CHECK_OUT, MOVIE
+WHERE CHECK_OUT.Media_Type = 'Movie'
+AND CHECK_OUT.ID_No = MOVIE.Movie_ID
+AND CHECK_OUT.Card_Number = SPATRON;
+--SPATRON is the specified patron
+
+--Lists all the albums and their unique identifiers with less than 2 copies held by the library
+--From II.2.a, media item queries
+SELECT ALBUM_ID, Name, Genre, Length, Year
+FROM ALBUM
+WHERE Num_Electronic_Copies + Num_Physical_Copies < 2;
+
+
+--Gives all the patrons who checked out a movie by ACTOR and the movies they checked out.
+--From II.2.d, checked out actor queries
+SELECT First_Name, Last_Name, MOV.Name
+FROM
+(SELECT First_Name, Last_Name, Movie.Name, Movie.Movie_ID
+FROM
+	(SELECT First_Name, Last_Name, ID_No
+	FROM Patron, Check_Out
+	WHERE Patron.Card_Number=Check_Out.Card_Number
+	AND Media_Type="Movie") AS COMov, Movie
+WHERE COMov.ID_No=Movie.Movie_ID) AS MOV, [Cast] AS C
+WHERE MOV.Movie_ID=C.Movie_ID AND C.Creator_No= SPACTOR;
+--SPACTOR is the specified creator number
+
+--Finds the total number of albums checked out by a single patron (you choose how to designate the patron)
+--From II.2.e, checked out album queries
+SELECT First_Name, Last_Name, COUNT(ID_No) as Checked_Out_Albums
+FROM Patron, Check_Out
+WHERE Patron.Card_Number = SPATRON AND Patron.Card_Number = Check_Out.Card_Number AND Check_Out.Media_Type = "Album";
+--SPATRON is the specified patron
+
+--Finds the patron who has checked out the most videos and the total number of videos they have checked out
+--From II.2.c, checked out movie queries
+SELECT First_Name, Last_Name, COUNT(ID_No) as Num_Movies_Checked_Out
+FROM Patron, Check_Out
+WHERE Patron.Card_Number=Check_Out.Card_Number
+AND Check_Out.Media_Type="Movie"
+GROUP BY First_Name
+ORDER BY COUNT(ID_No) DESC
+LIMIT 1;
+
+--Find the names of employees who are also patrons
+--From II.2.b, patron queries
+SELECT First_Name, Last_Name
+FROM (EMPLOYEE AS E JOIN PATRON AS P ON E.Card_Number = P.Card_Number);
+
+--Find the names of all patrons in a zip code
+--From II.2.b, patron queries
+SELECT First_Name, Last_Name
+FROM Patron
+WHERE Zip_Code=SPZIP;
+--SPZIP is the specified zip code
+
+--Provides a list of patron names, along with the total combined running time of all the movies they have checked out
+--From II.2.c, checked out movie queries
+SELECT Patron.First_Name, Patron.Last_Name, SUM(Length) as Total_Runtime
+FROM (
+SELECT Check_Out.Card_Number, Movie.Length
+FROM Movie, Check_Out
+WHERE Check_Out.Media_Type = 'Movie' AND Check_Out.ID_No = Movie.Movie_ID) as M, Patron
+WHERE Patron.Card_Number = M.Card_Number
+GROUP BY Patron.First_Name;
+
+--Provides a list of patron names and email addresses for patrons who have checked out more albums than the average patron
+--From II.2.e, checked out album queries
+SELECT Patron.First_Name, Patron.Last_name, Patron.Email
+FROM Patron INNER JOIN Check_Out c ON patron.card_number = c.card_number
+GROUP BY Last_Name
+HAVING COUNT(c.Card_Number) >
+(SELECT AVG(result) FROM (SELECT COUNT(Card_Number) as result FROM CHECK_OUT WHERE CHECK_OUT.Media_Type = 'Album' GROUP BY Card_Number));
+
+--Provides a list of the movies in the database and associated total copies lent to patrons, sorted from the movie that has been lent the most to the movies that has been lent the least.
+--From II.2.c, checked out movie queries
+SELECT mov.Name AS Name, COUNT(co.Id_No) as Count 
+FROM MOVIE mov INNER JOIN CHECK_OUT co ON mov.Movie_Id = co.Id_No 
+WHERE co.Media_Type = 'Movie' 
+GROUP BY co.Id_No, desc;
+
+--Provides a list of the albums in the database and associated totals for copies checked out to customers, sorted from the ones that have been checked out the highest amount to the ones checked out the lowest
+--From II.2.e, checked out album queries
+SELECT Album.Name, COUNT(Album.Name) as Total_Copies_Checked_Out
+FROM (SELECT Album.Name as Name
+FROM Check_Out, Album
+WHERE Media_Type = 'Album' AND Album_ID = ID_No) as M, Album
+WHERE Album.Name = M.Name
+GROUP BY Album.Name
+ORDER BY TotalCheckout DESC;
+
+--Finds the most popular actor in the database (i.e. the one who has had the most lent movies)
+--From II.2.d, checked out actor queries
+SELECT Name, MAX(holder) as "Movies Checked Out"
+FROM (
+SELECT ACTOR.First_Name || ' ' || ACTOR.Last_Name AS Name, Count(Actor.Creator_No) as holder
+FROM CHECK_OUT, CAST, ACTOR
+WHERE CHECK_OUT.Media_Type = "Movie" AND CHECK_OUT.ID_No = "CAST".Movie_ID AND "CAST".Creator_No = ACTOR.Creator_No
+GROUP BY Actor.Creator_No);
+
+--Finds the most listened to artist in the database (use the running time of the album and number of times the album has been lent out to calculate)
+--From II.2.f, checked out artist queries
+SELECT Creator, MAX(find)/60 AS 'Hours listened to'
+FROM
+(SELECT Creator, CASE WHEN seconds NOT NULL THEN seconds * checkedOut ELSE 1 END as find
+FROM
+(SELECT CASE WHEN ARTIST.Band_Name IS NOT NULL THEN ARTIST.Band_Name ELSE CASE WHEN ARTIST.Last_Name IS NOT NULL THEN ARTIST.First_Name || ' ' || ARTIST.Last_Name ELSE ARTIST.First_Name END END AS Creator, CASE WHEN ARTIST.Band_Name IS NULL THEN Count(ALBUM.Name) ELSE Count(ALBUM.Name)/Count(ARTIST.Band_Name) END AS checkedOut, ALBUM.Length AS seconds
+FROM ARTIST, CHECK_OUT, ARTIST_ALBUM, ALBUM
+WHERE CHECK_OUT.Media_Type = 'Album' AND
+CHECK_OUT.ID_No = ARTIST_ALBUM.Album_ID AND ARTIST_ALBUM.Creator_No = ARTIST.Creator_No AND
+CHECK_OUT.ID_No = ALBUM.Album_ID 
+GROUP BY Creator) 
+GROUP BY Creator);
+
+--Provides a list of customer information for patrons who have checked out anything by the most watched actors in the database
+--From II.2.c, checked out movie queries
+SELECT PATRON.*
+FROM PATRON, CHECK_OUT, "CAST"
+WHERE CHECK_OUT.Card_Number = PATRON.Card_Number AND CHECK_OUT.Media_Type = "Movie" AND CHECK_OUT.ID_No = "CAST".Movie_ID AND "CAST".Creator_No =
+(SELECT hold FROM
+(SELECT hold, MAX(holder) AS "Movies checked out"
+FROM
+(SELECT Actor.Creator_No AS hold, Count(Actor.Creator_No) as holder
+FROM CHECK_OUT, "CAST", ACTOR
+WHERE CHECK_OUT.Media_Type = "Movie" AND CHECK_OUT.ID_No = "CAST".Movie_ID AND "CAST".Creator_No = ACTOR.Creator_No
+GROUP BY Actor.Creator_No)))
+GROUP BY Patron.Card_Number;
+
+--Provides a list of artists who authored the albums checked out by customers who have checked out more albums than the average customer
+--From II.2.f, checked out artist queries
+SELECT ARTIST.First_Name, ARTIST.Last_Name, ARTIST.Band_Name
+FROM CHECK_OUT, ALBUM, ARTIST, ARTIST_ALBUM
+WHERE CHECK_OUT.Media_Type = 'Album' AND CHECK_OUT.ID_No = ALBUM.Album_ID AND ALBUM.Album_ID = ARTIST_ALBUM.Album_ID AND ARTIST_ALBUM.Creator_No = ARTIST.Creator_No
+GROUP BY First_Name, Last_Name, Band_Name
+HAVING COUNT(CHECK_OUT.Card_Number) >
+(SELECT AVG(result) FROM (SELECT COUNT(Card_Number) as result FROM CHECK_OUT WHERE CHECK_OUT.Media_Type = 'Album' GROUP BY Card_Number));
