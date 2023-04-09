@@ -1,0 +1,41 @@
+/* information on first 20 Tracks */
+INSERT INTO TRACK VALUES
+(1, "Views", "Rap", 311, 2016, null);
+INSERT INTO TRACK VALUES
+(2, "Hypnotize", "Rap", 229, 1997, null);
+INSERT INTO TRACK VALUES
+(3, "Bohemian Rhapsody", "Prog Rock", 355, 1975, "Is this the real life? Is this just fantasy? Caught in a landside, No escape from reality Open your eyes, Look up to the skies and see, Im just a poor boy, I need no sympathy, Because Im easy come, easy go, Little high, little low, Any way the wind blows doesnt really matter to Me, to me Mamaaa, Just killed a man, Put a gun against his head, pulled my trigger, Now hes dead Mamaaa, life had just begun, But now Ive gone and thrown it all away Mama, oooh, Didnt mean to make you cry, If Im not back again this time tomorrow, Carry on, carry on as if nothing really matters Too late, my time has come, Sends shivers down my spine, bodys aching all The time Goodbye, everybody, Ive got to go, Gotta leave you all behind and face the truth Mama, oooh I dont want to die, I sometimes wish Id never been born at all. I see a little silhouetto of a man, Scaramouch, Scaramouch, will you do the Fandango! Thunderbolts and lightning, very, very frightening me Galileo, Galileo Galileo, Galileo Galileo, Figaro - magnificoo Im just a poor boy nobody loves me Hes just a poor boy from a poor family, Spare him his life from this monstrosity Easy come, easy go, will you let me go Bismillah! No, we will not let you go (Let him go!) Bismillah! We will not let you go (Let him go!) Bismillah! We will not let you go (Let me go) Will not let you go (Let me go)(Never) Never let you go (Let me go) (Never) let you go (Let me go) Ah No, no, no, no, no, no, no Oh mama mia, mama mia, mama mia, let me go Beelzebub has a devil put aside for me, for me, For meee So you think you can stop me and spit in my eye So you think you can love me and leave me to die Oh, baby, cant do this to me, baby, Just gotta get out, just gotta get right outta here Nothing really matters, Anyone can see, Nothing really matters, Nothing really matters to me Any way the wind blows…");
+INSERT INTO TRACK VALUES
+(4, "Somebody to Love", "Rock", null, null, null);
+INSERT INTO TRACK VALUES
+(5, "Reborn", "Hip-Hop", null, 2018, null);
+INSERT INTO TRACK VALUES
+(6, "Ill Fly Away", "Gospel", null, 2004, "One glad morning, when this life is over Ill fly away To a land where joy shall never end, oh Ill fly away Oh Ill fly away oh glory Ill fly away When I die Hallelujah bye and bye Ill fly away");
+INSERT INTO TRACK VALUES
+(7, "Red Barchetta", "Rock", 366, null, null);
+INSERT INTO TRACK VALUES
+(8, "Chief Dont Run", null, 227, null, null);
+INSERT INTO TRACK VALUES
+(9, "99 Problems", null, null, null, null);
+INSERT INTO TRACK VALUES
+(10, "Never Ending", "Pop", 224, 2016, null);
+INSERT INTO TRACK VALUES
+(11, "Day n Nite", "Pop", null, 2008, null);
+INSERT INTO TRACK VALUES
+(12, "Mr. Rager", "Rock", 296, 2011, null);
+INSERT INTO TRACK VALUES
+(13, "Elsies Baby Boy (Flashback)", null, null, null, "Im never gonna get out of town, am I Gordie? You can do anything you want, man Yeah, sure. Ill see ya Not if I see you first He had one older sister Two older brothers And a single-parent mother Who worked her ass off to the best she could There was nothing they could tell him That the boy, no he wasnt worthless Even though he was in the same home He had felt alone, his past trouble passed on He was so bored in the winter So bored in the winter He was so bored in the winter Such a little sad boy, little sad boy Little sad boy, Elsies baby boy He was so bored in the winter So bored in the winter He was so bored in the winter Such a little sad boy, little sad boy Little sad boy, Elsies baby boy By the time he was eleven His father had left him White church sitting in the front row White casket closed, he wont see him no more He tried to disguise himself Made sure that no-one could tell That in his soul theres a wide-open hole Something scarred him so, he cant let him go He wont He was so bored in the winter So bored in the winter He was so bored in the winter Such a little sad boy, little sad boy Little sad boy, Elsies baby boy He was bored in the winter So bored in the winter He was so bored in the winter Such a little sad boy, little sad boy Little sad boy, Elsies Baby boy");
+INSERT INTO TRACK VALUES
+(14, "Sicko Mode", "Rap", 312, 2018, null);
+INSERT INTO TRACK VALUES
+(15, "Mo Bamba", "Trap", 181, 2017, null);
+INSERT INTO TRACK VALUES
+(16, "Landens First Song", "Good", 100, 2021, "Hello, my name is Landen. That was fun, come back next time!");
+INSERT INTO TRACK VALUES
+(17, "151 Rum", "Rap", 156, 2018, null);
+INSERT INTO TRACK VALUES
+(18, "Good News", "Soul", 542, 2020, null);
+INSERT INTO TRACK VALUES
+(19, "II. Shadows", "Funk", 231, 2013, null);
+INSERT INTO TRACK VALUES
+(20, "Easy Bake", "Rap", 291, 2015, null);

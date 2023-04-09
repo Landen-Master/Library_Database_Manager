@@ -1,0 +1,41 @@
+/* information on first 20 Employees */
+INSERT INTO EMPLOYEE VALUES
+("491967478", "Delia", "Montano", "Supervisor", 1, "142092712");
+INSERT INTO EMPLOYEE VALUES
+("601491634", "Samantha", "Nguyen", "Advisor", 1, null);
+INSERT INTO EMPLOYEE VALUES
+("617555521", "Charles", "Sprouse", "Librarian", 2, null);
+INSERT INTO EMPLOYEE VALUES
+("758012569", "Delia", "Montano", "Supervisor", 1, null);
+INSERT INTO EMPLOYEE VALUES
+("542115794", "Victoria", "Allen", "Librarian", 3, "250504285");
+INSERT INTO EMPLOYEE VALUES
+("352163197", "Thomas", "Prince", "Circulator", 8, null);
+INSERT INTO EMPLOYEE VALUES
+("142780324", "William", "Ellison", "Collector", 12, null);
+INSERT INTO EMPLOYEE VALUES
+("207586220", "Carissa", "Peters", "Librarian", 11, null);
+INSERT INTO EMPLOYEE VALUES
+("527752414", "Dean", "Sharber", "Owner", 4, 583356163);
+INSERT INTO EMPLOYEE VALUES
+("192221316", "Helen", "Colon", "Owner", 20, null);
+INSERT INTO EMPLOYEE VALUES
+("228341118", "Anthony", "Baker", "Collector", 19, null);
+INSERT INTO EMPLOYEE VALUES
+("490068875", "Winfred", "Whitney", "Inventory Manager", 20, null);
+INSERT INTO EMPLOYEE VALUES
+("633889650", "Denise", "Burns", "Owner", 15, null);
+INSERT INTO EMPLOYEE VALUES
+("219567610", "Evelyn", "Coleman", "Circulator", 11, null);
+INSERT INTO EMPLOYEE VALUES
+("389620163", "Salvador", "Burruss", "Owner", 1, null);
+INSERT INTO EMPLOYEE VALUES
+("023626297", "Larry", "Key", "Librarian", 10, null);
+INSERT INTO EMPLOYEE VALUES
+("164036101", "Harold", "Wilson", "Supervisor", 2, "302396550");
+INSERT INTO EMPLOYEE VALUES
+("648054151", "Klocko", "Mireya", "Sorter", 4, null);
+INSERT INTO EMPLOYEE VALUES
+("236521810", "Maggio", "Ewell", "Supervisor", 7, null);
+INSERT INTO EMPLOYEE VALUES
+("516609923", "Goldner", "Adalberto", "Owner", 14, null);

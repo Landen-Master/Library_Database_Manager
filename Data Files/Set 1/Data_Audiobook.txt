@@ -1,0 +1,41 @@
+/* information on first 20 Audiobooks */
+INSERT INTO AUDIOBOOK VALUES
+(1, "Views", 4, 2, "Non-Fiction", 4874, 2016);
+INSERT INTO AUDIOBOOK VALUES
+(2, "The Great Gatsby", 5, 8, "Tragedy", 141, 1925);
+INSERT INTO AUDIOBOOK VALUES
+(3, "Moby Dick", 2, 4, "Epic", 250, 1851);
+INSERT INTO AUDIOBOOK VALUES
+(4, "Hamlet", 2, 4, "Tragedy", null, null);
+INSERT INTO AUDIOBOOK VALUES
+(5, "The Odyssey", 5, 8, null, null, 100);
+INSERT INTO AUDIOBOOK VALUES
+(6, "The Divine Comedy", 1, 1, null, 340, 1640);
+INSERT INTO AUDIOBOOK VALUES
+(7, "Wuthering Heights", 1, 0, "Gothic", null, 1801);
+INSERT INTO AUDIOBOOK VALUES
+(8, "The Catcher in the Rye", 0, 1, "Young Adult", 130, null);
+INSERT INTO AUDIOBOOK VALUES
+(9, "To Kill a Mockingbird", 10, 10, null, 170, null);
+INSERT INTO AUDIOBOOK VALUES
+(10, "Percy Jackson and the Lightning Thief", 50, 50, null, null, null);
+INSERT INTO AUDIOBOOK VALUES
+(11, "Waiting for Godot", 4, 53, "Play", 200, 1850);
+INSERT INTO AUDIOBOOK VALUES
+(12, "The Adventures of Huckleberry Finn", 12, 400, "Adventure", null, null);
+INSERT INTO AUDIOBOOK VALUES
+(13, "Don Quixote", 10, 11, "Epic", null, 1610);
+INSERT INTO AUDIOBOOK VALUES
+(14, "The Bible", 35, 35, "Classic", null, null);
+INSERT INTO AUDIOBOOK VALUES
+(15, "War and Peace", 5, 3, "Epic", 1500, 1869);
+INSERT INTO AUDIOBOOK VALUES
+(16, "Landens First Book", 1, 0, "Easy Reading", 50, 2021);
+INSERT INTO AUDIOBOOK VALUES
+(17, "Anna Karenina", 2, 2, null, null, null);
+INSERT INTO AUDIOBOOK VALUES
+(18, "Emma", 2, 2, null, null, null);
+INSERT INTO AUDIOBOOK VALUES
+(19, "In Search of Lost Time", 1, 3, null, null, 2003);
+INSERT INTO AUDIOBOOK VALUES
+(20, "One Hundred Years of Solitude", 1, 1, null, null, 2006);

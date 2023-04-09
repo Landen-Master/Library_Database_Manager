@@ -1,0 +1,41 @@
+/* information on actors in movies in the database*/
+INSERT INTO CAST VALUES
+(1, 1, true, false, false);
+INSERT INTO CAST VALUES
+(2, 3, true, false, false);
+INSERT INTO CAST VALUES
+(3, 8, true, false, false);
+INSERT INTO CAST VALUES
+(4, 5, true, false, false);
+INSERT INTO CAST VALUES
+(5, 15, true, false, false);
+INSERT INTO CAST VALUES
+(6, 4, true, false, false);
+INSERT INTO CAST VALUES
+(7, 14, true, false, false);
+INSERT INTO CAST VALUES
+(8, 12, true, false, false);
+INSERT INTO CAST VALUES
+(9, 20, true, false, false);
+INSERT INTO CAST VALUES
+(10, 18, true, true, true);
+INSERT INTO CAST VALUES
+(11, 2, true, false, false);
+INSERT INTO CAST VALUES
+(12, 7, true, false, false);
+INSERT INTO CAST VALUES
+(13, 10, false, false, true);
+INSERT INTO CAST VALUES
+(14, 6,true, false, false);
+INSERT INTO CAST VALUES
+(15, 3, true, false, false);
+INSERT INTO CAST VALUES
+(16, 10, false, true, false);
+INSERT INTO CAST VALUES
+(17, 13, true,false, false);
+INSERT INTO CAST VALUES
+(18, 1, false, true, false);
+INSERT INTO CAST VALUES
+(19, 16, false, false, true);
+INSERT INTO CAST VALUES
+(20, 11, true, false, false);

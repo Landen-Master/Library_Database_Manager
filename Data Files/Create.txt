@@ -1,0 +1,246 @@
+/*
+* Creating Database Tables
+*/
+
+CREATE TABLE PATRON
+/* creating table for patrons, with all of their information */
+(Card_Number char(9) not null,
+First_Name varchar(15) not null,
+Last_Name varchar(15) not null,
+Email varchar(100),		--email may be set up later
+
+--address may be set up later
+Street varchar(25),
+City varchar(25),
+State varchar(13),
+Zip_Code char(5),
+primary key(Card_Number));
+CREATE UNIQUE INDEX card_no_index ON PATRON(Card_Number); --index to easily find different patrons
+
+CREATE TABLE LIBRARY_BRANCH
+/* creating table for library branches and all of their information */
+(Location_Number int not null,
+Street varchar(25) not null,
+City varchar(25) not null,
+State varchar(13) not null,
+Zip_Code char(5) not null,
+primary key(Location_Number));
+
+CREATE TABLE ARTIST
+/* creating table for musical artists and all of their information */
+(Creator_No int not null,
+First_Name varchar(25) not null,
+Last_Name varchar(15),		--some artists may have one name (ex: Cher)
+Band_Name varchar(30),		--allows for solo artists
+primary key(Creator_No));
+
+CREATE TABLE DIRECTOR
+/* creating table for movie directors and all of their information */
+(Creator_No int not null,
+First_Name varchar(15) not null,
+Last_Name varchar(15) not null,
+Films_Directed int,		--may be filled in later
+primary key(Creator_No));
+
+CREATE TABLE ACTOR
+/* creating table for movie actors and all of their information */
+(Creator_No int not null,
+First_Name varchar(15) not null,
+Last_Name varchar(15) not null,
+Age int,			--may be filled in later
+primary key(Creator_No));
+
+CREATE TABLE AUTHOR
+/* creating table for audiobook authors and all of their information */
+(Creator_No int not null,
+First_Name varchar(15) not null,
+Last_Name varchar(15) not null,
+Target_Audience varchar(20),	--may be filled in later
+primary key(Creator_No));
+
+CREATE TABLE ALBUM
+/* creating table for music albums and all of their information */
+(Album_ID int not null,
+Name varchar(100) not null,
+Num_Physical_Copies int not null,
+Num_Electronic_Copies int not null,
+
+--this can be added later if the user does not know
+Genre varchar(20),
+Length int,
+Year int,
+primary key(Album_ID));
+
+CREATE TABLE MOVIE
+/* creating table for movies and all of their information */
+(Movie_ID int not null,
+Name varchar(100) not null,
+Num_Physical_Copies int not null,
+Num_Electronic_Copies int not null,
+Content_Rating varchar(15) not null,
+
+--this can be added later if the user does not know
+Genre varchar(20),
+Length int,
+Year int,
+primary key(Movie_ID));
+
+CREATE TABLE AUDIOBOOK
+/* creating table for audiobooks and all of their information */
+(Audiobook_ID int not null,
+Name varchar(100) not null,
+Num_Physical_Copies int not null,
+Num_Electronic_Copies int not null,
+
+--this can be added later if the user does not know
+Genre varchar(20),
+Length int,
+Year int,
+primary key(Audiobook_ID));
+
+CREATE TABLE TRACK
+/* creating table for music tracks and all of their information */
+(Track_ID int not null,
+Name varchar(100) not null,
+
+--this can be added later if the user does not know
+Genre varchar(20),
+Length int,
+Year int,
+Lyrics varchar(10000),
+primary key(Track_ID));
+
+CREATE TABLE EMPLOYEE
+/* creating table for library employees and all of their information */
+(SSN char(9) not null,
+First_Name varchar(15) not null,
+Last_Name varchar(15) not null,
+Title varchar(30) not null,
+Primary_Location int not null,
+Card_Number char(9) unique,
+primary key(SSN),
+foreign key(Primary_Location) references LIBRARY_BRANCH(Location_Number) ON UPDATE CASCADE);
+
+CREATE TABLE ORDERS
+/* creating table for items ordered to the library and all of their information */
+(Location_Number int not null,
+Name varchar(100) not null,
+Type varchar (10) not null,
+Copies_Purchased int not null,
+Price int not null,
+Estimated_Date_of_Arrival date not null,
+foreign key(Location_Number) references LIBRARY_BRANCH(Location_Number) ON UPDATE CASCADE);
+
+CREATE TABLE ARTIST_SONG
+/* creating table for the relation of what songs an aritst has recorded*/
+(Track_ID int not null,
+Creator_No int not null,
+primary key(Track_ID, Creator_No),
+foreign key(Track_ID) references TRACK(Track_ID) ON UPDATE CASCADE,
+foreign key(Creator_No) references ARTIST(Creator_No) ON UPDATE CASCADE);
+
+CREATE TABLE ARTIST_ALBUM
+/* creating table for the relation of what albums an aritst has recorded*/
+(Album_ID int not null,
+Creator_No int not null,
+foreign key(Album_ID) references ALBUM(Album_ID) ON UPDATE CASCADE);
+
+CREATE TABLE TRACK_ON_ALBUM
+/* creating table for the relation of what tracks are on an album*/
+(Track_ID int not null,
+Album_ID int not null,
+primary key(Track_ID, Album_ID),
+foreign key(Track_ID) references TRACK(Track_ID) ON UPDATE CASCADE,
+foreign key(Album_ID) references ALBUM(Album_ID) ON UPDATE CASCADE);
+
+CREATE TABLE AUTHOR_BOOK
+/* creating table for the relation of what books an author has written*/
+(Audiobook_ID int not null,
+Creator_No int not null,
+primary key(Audiobook_ID, Creator_No),
+foreign key(Audiobook_ID) references AUDIOBOOK(Audiobook_ID) ON UPDATE CASCADE,
+foreign key(Creator_No) references AUTHOR(Creator_No) ON UPDATE CASCADE);
+
+CREATE TABLE DIRECTED
+/* creating table for the relation of what movies a director has directed */
+(Movie_ID int not null,
+Creator_No int not null,
+primary key(Movie_ID, Creator_No),
+foreign key(Movie_ID) references MOVIE(Movie_ID) ON UPDATE CASCADE,
+foreign key(Creator_No) references DIRECTOR(Creator_No) ON UPDATE CASCADE);
+
+CREATE TABLE CAST
+/* creating table for the relation of who was cast in a movie and their role*/
+(Movie_ID int not null,
+Creator_No int not null,
+Primary_Actor boolean,
+Secondary boolean,
+Extra boolean,
+primary key(Movie_ID, Creator_No),
+foreign key(Movie_ID) references MOVIE(Movie_ID) ON UPDATE CASCADE,
+foreign key(Creator_No) references ACTOR(Creator_No) ON UPDATE CASCADE);
+
+CREATE TABLE CHAPTER
+/* creating table chapters in an audiobook*/
+(Audiobook_ID int not null,
+Name varchar(30) not null,
+foreign key(Audiobook_ID) references AUDIOBOOK(Audiobook_ID) ON UPDATE CASCADE);
+
+CREATE TABLE ITEM_STORAGE
+/* creating table for the relation of where some physical copies of an item is being stored*/
+(Location_No int not null,
+ID_No int not null,
+Num_Copies int not null,
+Type varchar(10) not null,
+primary key(Location_No, ID_No),
+foreign key(Location_No) references LIBRARY_BRANCH(Location_Number) ON UPDATE CASCADE,
+foreign key(ID_No) references AUDIOBOOK(Audiobook_ID) ON UPDATE CASCADE,
+foreign key(ID_No) references MOVIE(Movie_ID) ON UPDATE CASCADE,
+foreign key(ID_No) references TRACK(Track_ID) ON UPDATE CASCADE,
+foreign key(ID_No) references ALBUM(Album_ID) ON UPDATE CASCADE);
+CREATE INDEX inventory ON ITEM_STORAGE(ID_No); --index to easily find where different items are stored
+
+CREATE TABLE CHECK_OUT
+/* creating table for all items being checked out*/
+(Card_Number char(9) not null,
+ID_No int not null,
+Is_Electronic boolean not null,
+Media_Type varchar(10) not null,
+Due_Date date not null,
+Is_returned boolean not null,
+foreign key(Card_Number) references PATRON(Card_Number) ON UPDATE CASCADE,
+foreign key(ID_No) references AUDIOBOOK(Audiobook_ID) ON UPDATE CASCADE,
+foreign key(ID_No) references MOVIE(Movie_ID) ON UPDATE CASCADE,
+foreign key(ID_No) references TRACK(Track_ID) ON UPDATE CASCADE,
+foreign key(ID_No) references ALBUM(Album_ID) ON UPDATE CASCADE);
+CREATE INDEX type_of_item ON CHECK_OUT(Media_Type); --index to easily differentiate checked out media types
+
+CREATE TABLE EMPLOYEE_WORK
+/* creating table for the relation of where an employee works*/
+(SSN varchar(9) not null,
+Location_Number int not null,
+primary key(Location_Number, SSN),
+foreign key(SSN) references EMPLOYEE(SSN) ON UPDATE CASCADE,
+foreign key(Location_Number) references LIBRARY_BRANCH(Location_Number) ON UPDATE CASCADE);
+
+/*
+Creating database views
+*/
+
+/* creating view that shows how many items are checked out at a location */
+CREATE VIEW CHECKED_OUT_AT_LOCATION
+AS
+SELECT L.Location_Number,count(C.ID_No) AS Checked_Out
+FROM CHECK_OUT AS C, (ITEM_STORAGE AS I JOIN LIBRARY_BRANCH AS B ON I.Location_No=B.Location_Number) AS L
+WHERE C.ID_No=L.ID_No
+AND C.Is_Returned=false
+GROUP BY L.Location_Number;
+
+
+/* creating view that shows what movies an actor has been in */
+CREATE VIEW ACTOR_PAGE
+AS
+SELECT Acts.First_Name, Acts.Last_Name, MOVIE.Name as Movie_Name
+FROM (ACTOR JOIN [CAST] ON ACTOR.Creator_No=[CAST].Creator_No) AS Acts, MOVIE
+WHERE Acts.Creator_No > 0 AND MOVIE.Movie_ID = Acts.Movie_ID
+ORDER BY Last_Name ASC;

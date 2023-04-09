@@ -1,0 +1,41 @@
+/* information on where media items are checked out*/
+INSERT INTO CHECK_OUT VALUES
+("123456789", 1, true, "Movie", "10-27-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("123456789", 1, false, "Track", "10-28-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("123456789", 1, true, "Audiobook", "10-29-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("123456789", 1, true, "Album", "10-30-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("987654321", 1, false, "Movie", "10-31-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("987654321", 1, false, "Track", "11-01-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("987654321", 1, false, "Audiobook", "11-02-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("987654321", 1, true, "Album", "11-03-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("112233445", 2, true, "Movie", "11-04-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("112233445", 2, false, "Track", "11-05-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("112233445", 2, false, "Audiobook", "11-06-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("112233445", 2, false, "Album", "11-07-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("566778899", 10, true, "Movie", "11-08-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("987654321", 12, true, "Track", "11-09-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("987654321", 4, false, "Audiobook", "11-10-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("987654321", 3, false, "Album", "11-11-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("135792468", 20, false, "Movie", "11-12-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("135792468", 19, true, "Track", "11-13-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("135792468", 18, true, "Audiobook", "11-14-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("135792468", 17, false, "Album", "11-15-2021", false);

@@ -1,0 +1,41 @@
+/* information on first 20 Library Branches */
+INSERT INTO LIBRARY_BRANCH VALUES
+(1, "200 Market St", "New Albany", "Ohio", "43054");
+INSERT INTO LIBRARY_BRANCH VALUES
+(2, "1423 N High St", "Columbus", "Ohio", "43201");
+INSERT INTO LIBRARY_BRANCH VALUES
+(3, "4641 Wayback Lane", "Westbury", "New York", "11590");
+INSERT INTO LIBRARY_BRANCH VALUES
+(4, "908 Wescam Court", "Carson City", "Nevada", "89701");
+INSERT INTO LIBRARY_BRANCH VALUES
+(5, "3708 Old Dear Lane", "Scarsdale", "New York", "10583");
+INSERT INTO LIBRARY_BRANCH VALUES
+(6, "597 Clifford Street", "San Francisco", "California", "94103");
+INSERT INTO LIBRARY_BRANCH VALUES
+(7, "820 Clair Street", "Waco", "Texas", "76701");
+INSERT INTO LIBRARY_BRANCH VALUES
+(8, "1441 Custer Street", "State College", "Pennsylvania", "16803");
+INSERT INTO LIBRARY_BRANCH VALUES
+(9, "3673 Hart Ridge Road", "Prudenville", "Michigan", "48651");
+INSERT INTO LIBRARY_BRANCH VALUES
+(10, "727 Lyndon Street", "Fort Washington", "Pennsylvania", "19034");
+INSERT INTO LIBRARY_BRANCH VALUES
+(11, "2278 Northwest Boulevard", "Hungerford", "Texas", "77448");
+INSERT INTO LIBRARY_BRANCH VALUES
+(12, "7166 Brooks Close", "New Albany", "Ohio", "43054");
+INSERT INTO LIBRARY_BRANCH VALUES
+(13, "4676 Green Acres Road", "Rocky Mount", "North Carolina", "27801");
+INSERT INTO LIBRARY_BRANCH VALUES
+(14, "684 Losh Lane", "Bellevue", "Pennsylvania", "15202");
+INSERT INTO LIBRARY_BRANCH VALUES
+(15, "4200 Valley Street", "Woodbury", "New Jersey", "08096");
+INSERT INTO LIBRARY_BRANCH VALUES
+(16, "3082 Plainfield Avenue", "Syracuse", "New York", "13202");
+INSERT INTO LIBRARY_BRANCH VALUES
+(17, "3293 Gordon Street", "Pomona", "California", "91766");
+INSERT INTO LIBRARY_BRANCH VALUES
+(18, "2279 Green Avenue", "Oakland", "California", "94607");
+INSERT INTO LIBRARY_BRANCH VALUES
+(19, "4819 Capitol Avenue", "Lombard", "Illinois", "60148"); 
+INSERT INTO LIBRARY_BRANCH VALUES
+(20, "1313 Maple Court", "Columbia", "Missouri", "65201");

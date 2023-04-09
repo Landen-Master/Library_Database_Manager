@@ -1,0 +1,951 @@
+/* information on first 20 Patrons */
+INSERT INTO PATRON VALUES
+("123456789", "Landen", "Master", "landen_master@hotmail.com", "7166 Brooks Close", "New Albany", "Ohio", "43054");
+INSERT INTO PATRON VALUES
+("987654321", "Adam", "Haag", "adam_haag@gmail.com", "529 Ravine Dr", "Aurora", "Ohio", "44202");
+INSERT INTO PATRON VALUES
+("112233445", "Evan", "Scott", null, null, null, null, null);
+INSERT INTO PATRON VALUES
+("566778899", "Ben", "Pacheco", "bpen@yahoo.com", null, "Painesville", "Ohio", "44077");
+INSERT INTO PATRON VALUES
+("135792468", "Hudson", "Hall", "hall.17@osu.edu", null, null, "Illinois", "60007");
+INSERT INTO PATRON VALUES
+("246813579", "Josh", "Badzik", null, "121 Woodland Road", null, "Pennsylvania", "15232");
+INSERT INTO PATRON VALUES
+("999999999", "Evan", "Scott", "escott259@insight.rr.com", null, null, null, null);
+INSERT INTO PATRON VALUES
+("420245682", "Shaun", "Loftin", "sloftin@deloit.com", "4900 Parkland Road", "Mason", null, "45034");
+INSERT INTO PATRON VALUES
+("694969463", "Dakota", "Getty", "bigballer@brand.com", "83 E 14th Ave", "Columbus", "Ohio", null);
+INSERT INTO PATRON VALUES
+("746771859", "James", "Whalen", "farmman@gmail.com", "1 Farm Lane", "Titusville", null, null);
+INSERT INTO PATRON VALUES
+("350983297", "Shannon", "McCalmont", "smacmon@anf.com", "87 E Lane", null, "Columbus", null);
+INSERT INTO PATRON VALUES
+("517193922", "Jeffery", "Bazos", "jb@amazon.com", "1 Amazon Lane", null, null, "98109");
+INSERT INTO PATRON VALUES
+("335269701", "Ethan", "Hach", "barber@hachshop.com", "7166 Brooks Close", "New Albany", "Ohio", "43054");
+INSERT INTO PATRON VALUES
+("382864581", "Glub", "Glub", "glubglub@glub.com", "172 E Frambes Ave", "Columbus", "Ohio", null);
+INSERT INTO PATRON VALUES
+("524174804", "Ryan", "Baldwin", "baldwinrocks@jpmorgan.com", "7 Spring Ave", "Lost Springs", null, "82229");
+INSERT INTO PATRON VALUES
+("085687155", "Cody", "Pestino", "cardinalsfan1@yahoo.com", "1538 Jefferson Ave", null, "Florida", "33139");
+INSERT INTO PATRON VALUES
+("553595249", "Alex", "Waters", null, "3041 Tipple Road", "Philadelphia", "Pennsylvania", "19146");
+INSERT INTO PATRON VALUES
+("014628030", "Mckenna", "Miller", null, "637 Clair Street", "Shambaugh",  "Iowa", "51651");
+INSERT INTO PATRON VALUES
+("201733081", "Sarah", "Laubach", null, "4042 Ocello Street", "San Diego", "California", "92111");
+INSERT INTO PATRON VALUES
+("422357620", "Sophia", "Banez", "glubina@gmail.com", "2892 Skinner Hollow Road", "Ontario", "Oregon", "97914");
+
+/* information on first 20 Library Branches */
+INSERT INTO LIBRARY_BRANCH VALUES
+(1, "200 Market St", "New Albany", "Ohio", "43054");
+INSERT INTO LIBRARY_BRANCH VALUES
+(2, "1423 N High St", "Columbus", "Ohio", "43201");
+INSERT INTO LIBRARY_BRANCH VALUES
+(3, "4641 Wayback Lane", "Westbury", "New York", "11590");
+INSERT INTO LIBRARY_BRANCH VALUES
+(4, "908 Wescam Court", "Carson City", "Nevada", "89701");
+INSERT INTO LIBRARY_BRANCH VALUES
+(5, "3708 Old Dear Lane", "Scarsdale", "New York", "10583");
+INSERT INTO LIBRARY_BRANCH VALUES
+(6, "597 Clifford Street", "San Francisco", "California", "94103");
+INSERT INTO LIBRARY_BRANCH VALUES
+(7, "820 Clair Street", "Waco", "Texas", "76701");
+INSERT INTO LIBRARY_BRANCH VALUES
+(8, "1441 Custer Street", "State College", "Pennsylvania", "16803");
+INSERT INTO LIBRARY_BRANCH VALUES
+(9, "3673 Hart Ridge Road", "Prudenville", "Michigan", "48651");
+INSERT INTO LIBRARY_BRANCH VALUES
+(10, "727 Lyndon Street", "Fort Washington", "Pennsylvania", "19034");
+INSERT INTO LIBRARY_BRANCH VALUES
+(11, "2278 Northwest Boulevard", "Hungerford", "Texas", "77448");
+INSERT INTO LIBRARY_BRANCH VALUES
+(12, "7166 Brooks Close", "New Albany", "Ohio", "43054");
+INSERT INTO LIBRARY_BRANCH VALUES
+(13, "4676 Green Acres Road", "Rocky Mount", "North Carolina", "27801");
+INSERT INTO LIBRARY_BRANCH VALUES
+(14, "684 Losh Lane", "Bellevue", "Pennsylvania", "15202");
+INSERT INTO LIBRARY_BRANCH VALUES
+(15, "4200 Valley Street", "Woodbury", "New Jersey", "08096");
+INSERT INTO LIBRARY_BRANCH VALUES
+(16, "3082 Plainfield Avenue", "Syracuse", "New York", "13202");
+INSERT INTO LIBRARY_BRANCH VALUES
+(17, "3293 Gordon Street", "Pomona", "California", "91766");
+INSERT INTO LIBRARY_BRANCH VALUES
+(18, "2279 Green Avenue", "Oakland", "California", "94607");
+INSERT INTO LIBRARY_BRANCH VALUES
+(19, "4819 Capitol Avenue", "Lombard", "Illinois", "60148"); 
+INSERT INTO LIBRARY_BRANCH VALUES
+(20, "1313 Maple Court", "Columbia", "Missouri", "65201");
+
+/* information on first 20 Artists */
+INSERT INTO ARTIST VALUES
+(1, "Drake", null, null);
+INSERT INTO ARTIST VALUES
+(2, "Biggie", "Smalls", null);
+INSERT INTO ARTIST VALUES
+(3, "Freddie", "Mercury", "Queen");
+INSERT INTO ARTIST VALUES
+(4, "Brian", "May", "Queen");
+INSERT INTO ARTIST VALUES
+(5, "Roger", "Taylor", "Queen");
+INSERT INTO ARTIST VALUES
+(6, "John", "Deacon", "Queen");
+INSERT INTO ARTIST VALUES
+(7, "Kanye", "West", "KIDS SEE GHOSTS");
+INSERT INTO ARTIST VALUES
+(8, "Alex", "Lifeson", "Rush");
+INSERT INTO ARTIST VALUES
+(9, "Neil", "Peart", "Rush");
+INSERT INTO ARTIST VALUES
+(10, "Geddy", "Lee", "Rush");
+INSERT INTO ARTIST VALUES
+(11, "Jidenna", null, null);
+INSERT INTO ARTIST VALUES
+(12, "Jay-Z", null, null);
+INSERT INTO ARTIST VALUES
+(13, "Rihanna", null, null);
+INSERT INTO ARTIST VALUES
+(14, "Kid", "Cudi", "KIDS SEE GHOSTS");
+INSERT INTO ARTIST VALUES
+(15, "Travis", "Scott", null);
+INSERT INTO ARTIST VALUES
+(16, "Landen", "Master", null);
+INSERT INTO ARTIST VALUES
+(17, "JID", null, null);
+INSERT INTO ARTIST VALUES
+(18, "Childish", "Gambino", null);
+INSERT INTO ARTIST VALUES
+(19, "Jay", "Rock", null);
+INSERT INTO ARTIST VALUES
+(20, "Key", "Glock", null);
+
+/* information on first 20 Directors */
+INSERT INTO DIRECTOR VALUES
+(1, "Steven", "Spielberg", 32);
+INSERT INTO DIRECTOR VALUES
+(2, "Martin", "Scorsese", 25);
+INSERT INTO DIRECTOR VALUES
+(3, "Alfred", "Hitchcock", null);
+INSERT INTO DIRECTOR VALUES
+(4, "Stanley", "Kubrick", 13);
+INSERT INTO DIRECTOR VALUES
+(5, "Francis", "Coppola", null);
+INSERT INTO DIRECTOR VALUES
+(6, "Woody", "Allen", null);
+INSERT INTO DIRECTOR VALUES
+(7, "Billy", "Wilder", null);
+INSERT INTO DIRECTOR VALUES
+(8, "Landen", "Master", 0);
+INSERT INTO DIRECTOR VALUES
+(9, "Peter", "Jackson", 3);
+INSERT INTO DIRECTOR VALUES
+(10, "Clint", "Eastwood", 15);
+INSERT INTO DIRECTOR VALUES
+(11, "James", "Cameron", 13);
+INSERT INTO DIRECTOR VALUES
+(12, "Anthony", "Russo", 9);
+INSERT INTO DIRECTOR VALUES
+(13, "Joseph", "Russo", 9);
+INSERT INTO DIRECTOR VALUES
+(14, "Tim", "Burton", 19);
+INSERT INTO DIRECTOR VALUES
+(15, "Quentin", "Tarantino", 9);
+INSERT INTO DIRECTOR VALUES
+(16, "Ridley", "Scott", 10);
+INSERT INTO DIRECTOR VALUES
+(17, "Christopher", "Nolan", 5);
+INSERT INTO DIRECTOR VALUES
+(18, "Jonathan", "Clark", null); 
+INSERT INTO DIRECTOR VALUES
+(19, "Peter", "Weir", 8);
+INSERT INTO DIRECTOR VALUES
+(20, "John", "Woo", 12);
+
+/* information on first 20 Actors */
+INSERT INTO ACTOR VALUES
+(1, "Jack", "Nicholson", 84);
+INSERT INTO ACTOR VALUES
+(2, "Robert", "DeNiro", null);
+INSERT INTO ACTOR VALUES
+(3, "Al", "Pacino", null);
+INSERT INTO ACTOR VALUES
+(4, "Daniel", "Day-Lewis", 64);
+INSERT INTO ACTOR VALUES
+(5, "Dustin", "Hoffman", 84);
+INSERT INTO ACTOR VALUES
+(6, "Tom", "Hanks", 65);
+INSERT INTO ACTOR VALUES
+(7, "Anthony", "Hopkins", null);
+INSERT INTO ACTOR VALUES
+(8, "Paul", "Newman", 96);
+INSERT INTO ACTOR VALUES
+(9, "Denzel", "Washington", 66);
+INSERT INTO ACTOR VALUES
+(10, "Landen", "Master", 21);
+INSERT INTO ACTOR VALUES
+(11, "Robin", "Williams", 70);
+INSERT INTO ACTOR VALUES
+(12, "Sean", "Penn", 61);
+INSERT INTO ACTOR VALUES
+(13, "Morgan", "Freeman", 84);
+INSERT INTO ACTOR VALUES
+(14, "Leonardo", "DiCaprio", 46);
+INSERT INTO ACTOR VALUES
+(15, "Meryl", "Streep", 72);
+INSERT INTO ACTOR VALUES
+(16, "Betty", "White", 99);
+INSERT INTO ACTOR VALUES
+(17, "Audrey", "Hepburn", null);
+INSERT INTO ACTOR VALUES
+(18, "Scarlett", "Johansson", 36);
+INSERT INTO ACTOR VALUES
+(19, "Margot", "Robbie", 31);
+INSERT INTO ACTOR VALUES
+(20, "Miranda", "Cosgrove", 28);
+
+/* information on first 20 Authors */
+INSERT INTO AUTHOR VALUES
+(1, "William", "Shakespeare", "Students");
+INSERT INTO AUTHOR VALUES
+(2, "George", "Orwell", "Capitalists");
+INSERT INTO AUTHOR VALUES
+(3, "Theodor", "Seuss", "Children");
+INSERT INTO AUTHOR VALUES
+(4, "J.R.R.", "Tolkien", "Adults");
+INSERT INTO AUTHOR VALUES
+(5, "Edgar", "Allan-Poe", null);
+INSERT INTO AUTHOR VALUES
+(6, "Mark", "Twain", "Children");
+INSERT INTO AUTHOR VALUES
+(7, "Rick", "Riordan", "Children");
+INSERT INTO AUTHOR VALUES
+(8, "Landen", "Master", "Cool People");
+INSERT INTO AUTHOR VALUES
+(9, "Alice", "Walker", "Everyone");
+INSERT INTO AUTHOR VALUES
+(10, "Marilynne", "Robinson", null);
+INSERT INTO AUTHOR VALUES
+(11, "Kathryn", "Stockett", null);
+INSERT INTO AUTHOR VALUES
+(12, "Jonathan", "Franzen", null);
+INSERT INTO AUTHOR VALUES
+(13, "Michael", "Chabon", null);
+INSERT INTO AUTHOR VALUES
+(14, "George", "Saunders", null);
+INSERT INTO AUTHOR VALUES
+(15, "Erika", "Mitchell", "Adults");
+INSERT INTO AUTHOR VALUES
+(16, "Rachel", "Kushner", null);
+INSERT INTO AUTHOR VALUES
+(17, "Anne", "Tyler", null);
+INSERT INTO AUTHOR VALUES
+(18, "Stephen", "King", "Horror Enthusiasts");
+INSERT INTO AUTHOR VALUES
+(19, "Percival", "Everett", null);
+INSERT INTO AUTHOR VALUES
+(20, "Neil", "Gaiman", null);
+
+/* information on first 20 Albums */
+INSERT INTO ALBUM VALUES
+(1, "Views", 4, 2, "Rap", 4874, 2016);
+INSERT INTO ALBUM VALUES
+(2, "Life After Death", 3, 7, "Rap", 7239, 1997);
+INSERT INTO ALBUM VALUES
+(3, "A Night At The Opera", 20, 50, "Rap", 2588, null);
+INSERT INTO ALBUM VALUES
+(4, "A Day at the Races", 5, 8, "Rock", null, null);
+INSERT INTO ALBUM VALUES
+(5, "Kids See Ghosts", 4, 4, null, null, 2018);
+INSERT INTO ALBUM VALUES
+(6, "Views", 8, 10, "Country", 20000, 1999);
+INSERT INTO ALBUM VALUES
+(7, "The College Dropout", 1, 0, "Hip-Hop", null, 2004);
+INSERT INTO ALBUM VALUES
+(8, "Moving Pictures", 0, 1, "Rock", 2403, null);
+INSERT INTO ALBUM VALUES
+(9, "The Chief", 10, 10, null, 3448, null);
+INSERT INTO ALBUM VALUES
+(10, "The Black Album", 50, 50, null, null, null);
+INSERT INTO ALBUM VALUES
+(11, "Anti", 4, 53, "Pop", 2616, 2016);
+INSERT INTO ALBUM VALUES
+(12, "Man on the Moon: The End of Day", 12, 400, "Rap", 3513, 2009);
+INSERT INTO ALBUM VALUES
+(13, "Man on the Moon II: The Legend of Mr. Rager", 10, 11, "Hip-Hop", 3726, 2011);
+INSERT INTO ALBUM VALUES
+(14, "Man on the Moon III: The Chosen", 35, 35, "Hip-Hop", 3497, 2020);
+INSERT INTO ALBUM VALUES
+(15, "Astroworld", 5, 3, "Rap", 3513, 2018);
+INSERT INTO ALBUM VALUES
+(16, "The Landen Master Spectacular Album", 1, 0, "Pop", 3513, 2021);
+INSERT INTO ALBUM VALUES
+(17, "DiCaprio 2", 2, 2, "Rap", 3009, 2018);
+INSERT INTO ALBUM VALUES
+(18, "Circles", 200, 200, "Hip-Hop", 2924, 2020);
+INSERT INTO ALBUM VALUES
+(19, "Because the Internet", 1, 3, "Hip-Hop", 3532, 2013);
+INSERT INTO ALBUM VALUES
+(20, "90059", 1, 1, "Rap", null, 2015);
+
+/* information on first 20 Movies */
+INSERT INTO MOVIE VALUES
+(1, "Views", 4, 2, "R", "Documentary", 4874, 2016);
+INSERT INTO MOVIE VALUES
+(2, "The Godfather", 5, 8, "R", "Mafia", 10620, 1972);
+INSERT INTO MOVIE VALUES
+(3, "The Shawshank Redemption", 2, 4, "R", "Drama", 8520, 1992);
+INSERT INTO MOVIE VALUES
+(4, "Pulp Fiction", 5, 8, "R", "Cult", null, null);
+INSERT INTO MOVIE VALUES
+(5, "Casablanca", 5, 8, "PG", null, null, 1942);
+INSERT INTO MOVIE VALUES
+(6, "The Godfather", 1, 1, "PG", null, 1235, 2020);
+INSERT INTO MOVIE VALUES
+(7, "The Godfather: Part II", 1, 0, "R", "Mafia", null, 1974);
+INSERT INTO MOVIE VALUES
+(8, "E.T. The Extra-Terrestrial", 0, 1, "PG", "Adventure", 6300, null); 
+INSERT INTO MOVIE VALUES
+(9, "2001: A Space Odyssey", 10, 10, "PG-13", null, 8340, null);
+INSERT INTO MOVIE VALUES
+(10, "Schindlers List", 50, 50, "R", null, null, null);
+INSERT INTO MOVIE VALUES
+(11, "Star Wars", 4, 53, "PG", "Sci-fi", 7260, 1977);
+INSERT INTO MOVIE VALUES
+(12, "Back to the Future", 12, 400, "PG", "Sci-fi", null, null);
+INSERT INTO MOVIE VALUES
+(13, "Raiders of the Lost Ark", 10, 11, "PG", "Adventure", null, 1981);
+INSERT INTO MOVIE VALUES
+(14, "Forrest Gump", 35, 35, "PG-13", "Dramedy", null, null);
+INSERT INTO MOVIE VALUES
+(15, "Goodfellas", 5, 3, "R", "Mafia", 4353, 1980);
+INSERT INTO MOVIE VALUES
+(16, "Landens First Movie", 1, 0, "G", "Comedy", 100000, 2021);  
+INSERT INTO MOVIE VALUES
+(17, "Blade Runner", 2, 2, "R", "Sci-fi", 41243, 1981);
+INSERT INTO MOVIE VALUES
+(18, "One Flew Over the Cuckoos Nest", 13, 4, "R", "Drama", 3000, 1975);
+INSERT INTO MOVIE VALUES
+(19, "American Beauty", 1, 3, "R", "Drama", null, null);
+INSERT INTO MOVIE VALUES
+(20, "A Clockwork Orange", 1, 1, "R", null, null, null);
+
+/* information on first 20 Audiobooks */
+INSERT INTO AUDIOBOOK VALUES
+(1, "Views", 4, 2, "Non-Fiction", 4874, 2016);
+INSERT INTO AUDIOBOOK VALUES
+(2, "The Great Gatsby", 5, 8, "Tragedy", 141, 1925);
+INSERT INTO AUDIOBOOK VALUES
+(3, "Moby Dick", 2, 4, "Epic", 250, 1851);
+INSERT INTO AUDIOBOOK VALUES
+(4, "Hamlet", 2, 4, "Tragedy", null, null);
+INSERT INTO AUDIOBOOK VALUES
+(5, "The Odyssey", 5, 8, null, null, 100);
+INSERT INTO AUDIOBOOK VALUES
+(6, "The Divine Comedy", 1, 1, null, 340, 1640);
+INSERT INTO AUDIOBOOK VALUES
+(7, "Wuthering Heights", 1, 0, "Gothic", null, 1801);
+INSERT INTO AUDIOBOOK VALUES
+(8, "The Catcher in the Rye", 0, 1, "Young Adult", 130, null);
+INSERT INTO AUDIOBOOK VALUES
+(9, "To Kill a Mockingbird", 10, 10, null, 170, null);
+INSERT INTO AUDIOBOOK VALUES
+(10, "Percy Jackson and the Lightning Thief", 50, 50, null, null, null);
+INSERT INTO AUDIOBOOK VALUES
+(11, "Waiting for Godot", 4, 53, "Play", 200, 1850);
+INSERT INTO AUDIOBOOK VALUES
+(12, "The Adventures of Huckleberry Finn", 12, 400, "Adventure", null, null);
+INSERT INTO AUDIOBOOK VALUES
+(13, "Don Quixote", 10, 11, "Epic", null, 1610);
+INSERT INTO AUDIOBOOK VALUES
+(14, "The Bible", 35, 35, "Classic", null, null);
+INSERT INTO AUDIOBOOK VALUES
+(15, "War and Peace", 5, 3, "Epic", 1500, 1869);
+INSERT INTO AUDIOBOOK VALUES
+(16, "Landens First Book", 1, 0, "Easy Reading", 50, 2021);
+INSERT INTO AUDIOBOOK VALUES
+(17, "Anna Karenina", 2, 2, null, null, null);
+INSERT INTO AUDIOBOOK VALUES
+(18, "Emma", 2, 2, null, null, null);
+INSERT INTO AUDIOBOOK VALUES
+(19, "In Search of Lost Time", 1, 3, null, null, 2003);
+INSERT INTO AUDIOBOOK VALUES
+(20, "One Hundred Years of Solitude", 1, 1, null, null, 2006);
+
+/* information on first 20 Tracks */
+INSERT INTO TRACK VALUES
+(1, "Views", "Rap", 311, 2016, null);
+INSERT INTO TRACK VALUES
+(2, "Hypnotize", "Rap", 229, 1997, null);
+INSERT INTO TRACK VALUES
+(3, "Bohemian Rhapsody", "Prog Rock", 355, 1975, "Is this the real life? Is this just fantasy? Caught in a landside, No escape from reality Open your eyes, Look up to the skies and see, Im just a poor boy, I need no sympathy, Because Im easy come, easy go, Little high, little low, Any way the wind blows doesnt really matter to Me, to me Mamaaa, Just killed a man, Put a gun against his head, pulled my trigger, Now hes dead Mamaaa, life had just begun, But now Ive gone and thrown it all away Mama, oooh, Didnt mean to make you cry, If Im not back again this time tomorrow, Carry on, carry on as if nothing really matters Too late, my time has come, Sends shivers down my spine, bodys aching all The time Goodbye, everybody, Ive got to go, Gotta leave you all behind and face the truth Mama, oooh I dont want to die, I sometimes wish Id never been born at all. I see a little silhouetto of a man, Scaramouch, Scaramouch, will you do the Fandango! Thunderbolts and lightning, very, very frightening me Galileo, Galileo Galileo, Galileo Galileo, Figaro - magnificoo Im just a poor boy nobody loves me Hes just a poor boy from a poor family, Spare him his life from this monstrosity Easy come, easy go, will you let me go Bismillah! No, we will not let you go (Let him go!) Bismillah! We will not let you go (Let him go!) Bismillah! We will not let you go (Let me go) Will not let you go (Let me go)(Never) Never let you go (Let me go) (Never) let you go (Let me go) Ah No, no, no, no, no, no, no Oh mama mia, mama mia, mama mia, let me go Beelzebub has a devil put aside for me, for me, For meee So you think you can stop me and spit in my eye So you think you can love me and leave me to die Oh, baby, cant do this to me, baby, Just gotta get out, just gotta get right outta here Nothing really matters, Anyone can see, Nothing really matters, Nothing really matters to me Any way the wind blows…");
+INSERT INTO TRACK VALUES
+(4, "Somebody to Love", "Rock", null, null, null);
+INSERT INTO TRACK VALUES
+(5, "Reborn", "Hip-Hop", null, 2018, null);
+INSERT INTO TRACK VALUES
+(6, "Ill Fly Away", "Gospel", null, 2004, "One glad morning, when this life is over Ill fly away To a land where joy shall never end, oh Ill fly away Oh Ill fly away oh glory Ill fly away When I die Hallelujah bye and bye Ill fly away");
+INSERT INTO TRACK VALUES
+(7, "Red Barchetta", "Rock", 366, null, null);
+INSERT INTO TRACK VALUES
+(8, "Chief Dont Run", null, 227, null, null);
+INSERT INTO TRACK VALUES
+(9, "99 Problems", null, null, null, null);
+INSERT INTO TRACK VALUES
+(10, "Never Ending", "Pop", 224, 2016, null);
+INSERT INTO TRACK VALUES
+(11, "Day n Nite", "Pop", null, 2008, null);
+INSERT INTO TRACK VALUES
+(12, "Mr. Rager", "Rock", 296, 2011, null);
+INSERT INTO TRACK VALUES
+(13, "Elsies Baby Boy (Flashback)", null, null, null, "Im never gonna get out of town, am I Gordie? You can do anything you want, man Yeah, sure. Ill see ya Not if I see you first He had one older sister Two older brothers And a single-parent mother Who worked her ass off to the best she could There was nothing they could tell him That the boy, no he wasnt worthless Even though he was in the same home He had felt alone, his past trouble passed on He was so bored in the winter So bored in the winter He was so bored in the winter Such a little sad boy, little sad boy Little sad boy, Elsies baby boy He was so bored in the winter So bored in the winter He was so bored in the winter Such a little sad boy, little sad boy Little sad boy, Elsies baby boy By the time he was eleven His father had left him White church sitting in the front row White casket closed, he wont see him no more He tried to disguise himself Made sure that no-one could tell That in his soul theres a wide-open hole Something scarred him so, he cant let him go He wont He was so bored in the winter So bored in the winter He was so bored in the winter Such a little sad boy, little sad boy Little sad boy, Elsies baby boy He was bored in the winter So bored in the winter He was so bored in the winter Such a little sad boy, little sad boy Little sad boy, Elsies Baby boy");
+INSERT INTO TRACK VALUES
+(14, "Sicko Mode", "Rap", 312, 2018, null);
+INSERT INTO TRACK VALUES
+(15, "Mo Bamba", "Trap", 181, 2017, null);
+INSERT INTO TRACK VALUES
+(16, "Landens First Song", "Good", 100, 2021, "Hello, my name is Landen. That was fun, come back next time!");
+INSERT INTO TRACK VALUES
+(17, "151 Rum", "Rap", 156, 2018, null);
+INSERT INTO TRACK VALUES
+(18, "Good News", "Soul", 542, 2020, null);
+INSERT INTO TRACK VALUES
+(19, "II. Shadows", "Funk", 231, 2013, null);
+INSERT INTO TRACK VALUES
+(20, "Easy Bake", "Rap", 291, 2015, null);
+
+/* information on first 20 Employees */
+INSERT INTO EMPLOYEE VALUES
+("491967478", "Delia", "Montano", "Supervisor", 1, "142092712");
+INSERT INTO EMPLOYEE VALUES
+("601491634", "Samantha", "Nguyen", "Advisor", 1, null);
+INSERT INTO EMPLOYEE VALUES
+("617555521", "Charles", "Sprouse", "Librarian", 2, null);
+INSERT INTO EMPLOYEE VALUES
+("758012569", "Delia", "Montano", "Supervisor", 1, null);
+INSERT INTO EMPLOYEE VALUES
+("542115794", "Victoria", "Allen", "Librarian", 3, "250504285");
+INSERT INTO EMPLOYEE VALUES
+("352163197", "Thomas", "Prince", "Circulator", 8, null);
+INSERT INTO EMPLOYEE VALUES
+("142780324", "William", "Ellison", "Collector", 12, null);
+INSERT INTO EMPLOYEE VALUES
+("207586220", "Carissa", "Peters", "Librarian", 11, null);
+INSERT INTO EMPLOYEE VALUES
+("527752414", "Dean", "Sharber", "Owner", 4, 583356163);
+INSERT INTO EMPLOYEE VALUES
+("192221316", "Helen", "Colon", "Owner", 20, null);
+INSERT INTO EMPLOYEE VALUES
+("228341118", "Anthony", "Baker", "Collector", 19, null);
+INSERT INTO EMPLOYEE VALUES
+("490068875", "Winfred", "Whitney", "Inventory Manager", 20, null);
+INSERT INTO EMPLOYEE VALUES
+("633889650", "Denise", "Burns", "Owner", 15, null);
+INSERT INTO EMPLOYEE VALUES
+("219567610", "Evelyn", "Coleman", "Circulator", 11, null);
+INSERT INTO EMPLOYEE VALUES
+("389620163", "Salvador", "Burruss", "Owner", 1, null);
+INSERT INTO EMPLOYEE VALUES
+("023626297", "Larry", "Key", "Librarian", 10, null);
+INSERT INTO EMPLOYEE VALUES
+("164036101", "Harold", "Wilson", "Supervisor", 2, "302396550");
+INSERT INTO EMPLOYEE VALUES
+("648054151", "Klocko", "Mireya", "Sorter", 4, null);
+INSERT INTO EMPLOYEE VALUES
+("236521810", "Maggio", "Ewell", "Supervisor", 7, null);
+INSERT INTO EMPLOYEE VALUES
+("516609923", "Goldner", "Adalberto", "Owner", 14, null);
+
+/* information on first 20 Orders */
+INSERT INTO ORDERS VALUES
+(1, "The Godfather", "Movie", 20, 150, 2021-10-31);
+INSERT INTO ORDERS VALUES
+(12, "Blade Runner", "Movie", 4, 345, 2021-12-31);
+INSERT INTO ORDERS VALUES
+(13, "American Beauty", "Movie", 29, 300, 2022-10-01);
+INSERT INTO ORDERS VALUES
+(14, "movie name", "Movie", 38, 4543, 2023-07-15);
+INSERT INTO ORDERS VALUES
+(18, "Spider-Man", "Movie", 239, 35737, 2022-02-14);
+INSERT INTO ORDERS VALUES
+(14, "Spider-Man 2", "Movie", 10, 100, 2021-07-14);
+INSERT INTO ORDERS VALUES
+(20, "Spider-Man 3", "Movie", 15, 0, 2022-07-04);
+INSERT INTO ORDERS VALUES
+(4, "Moby Dick", "Audiobook", 4, 100, 2023-02-14);
+INSERT INTO ORDERS VALUES
+(5, "The Book of Mormon", "Audiobook", 100, 10, 2020-02-14);
+INSERT INTO ORDERS VALUES
+(8, "Wuthering Heights", "Audiobook", 25965, 301043975, 2025-10-09);
+INSERT INTO ORDERS VALUES
+(12, "American Gods", "Audiobook", 10, 57, 2111-11-11);
+INSERT INTO ORDERS VALUES
+(12, "To Kill a Mockingbird", "Audiobook", 8, 1, 2023-10-19);
+INSERT INTO ORDERS VALUES
+(3, "Sandman", "Audiobook", 29, 437, 2022-01-11);
+INSERT INTO ORDERS VALUES
+(15, "Van Halen", "Album", 1, 15, 2021-05-26);
+INSERT INTO ORDERS VALUES
+(18, "Appetite for Destruction", "Album", 10, 444, 2023-05-26);
+INSERT INTO ORDERS VALUES
+(4, "2014 Forest Hills Drive", "Album", 125, 32546, 2023-02-14);
+INSERT INTO ORDERS VALUES
+(12, "Illmatic", "Album", 5, 533, 2023-02-14);
+INSERT INTO ORDERS VALUES
+(9, "Thriller", "Album", 33, 63, 2023-02-14);
+INSERT INTO ORDERS VALUES
+(1, "21", "Album", 1, 353, 2023-02-14);
+INSERT INTO ORDERS VALUES
+(11, "Abbey Road", "Album", 10000, 100, 2023-02-14);
+
+/* information on creators of songs in the database*/
+INSERT INTO ARTIST_SONG VALUES
+(1, 1);
+INSERT INTO ARTIST_SONG VALUES
+(2, 2);
+INSERT INTO ARTIST_SONG VALUES
+(3, 3);
+INSERT INTO ARTIST_SONG VALUES
+(3,4);
+INSERT INTO ARTIST_SONG VALUES
+(3, 5);
+INSERT INTO ARTIST_SONG VALUES
+(3, 6);
+INSERT INTO ARTIST_SONG VALUES
+(4, 3);
+INSERT INTO ARTIST_SONG VALUES
+(4, 4);
+INSERT INTO ARTIST_SONG VALUES
+(4, 5);
+INSERT INTO ARTIST_SONG VALUES
+(4, 6);
+INSERT INTO ARTIST_SONG VALUES
+(5, 7);
+INSERT INTO ARTIST_SONG VALUES
+(5, 14);
+INSERT INTO ARTIST_SONG VALUES
+(6, 7);
+INSERT INTO ARTIST_SONG VALUES
+(7, 8);
+INSERT INTO ARTIST_SONG VALUES
+(7, 9);
+INSERT INTO ARTIST_SONG VALUES
+(7, 10);
+INSERT INTO ARTIST_SONG VALUES
+(8, 11);
+INSERT INTO ARTIST_SONG VALUES
+(9, 12);
+INSERT INTO ARTIST_SONG VALUES
+(10, 13);
+INSERT INTO ARTIST_SONG VALUES
+(11, 14);
+INSERT INTO ARTIST_SONG VALUES
+(12, 14);
+INSERT INTO ARTIST_SONG VALUES
+(13, 14);
+INSERT INTO ARTIST_SONG VALUES
+(14, 15);
+INSERT INTO ARTIST_SONG VALUES
+(16, 16);
+INSERT INTO ARTIST_SONG VALUES
+(17, 17);
+INSERT INTO ARTIST_SONG VALUES
+(19, 18);
+INSERT INTO ARTIST_SONG VALUES
+(20, 19);
+
+/* information on creators of albums in the database*/
+INSERT INTO ARTIST_ALBUM VALUES
+(1, 1);
+INSERT INTO ARTIST_ALBUM VALUES
+(2, 2);
+INSERT INTO ARTIST_ALBUM VALUES
+(3, 3);
+INSERT INTO ARTIST_ALBUM VALUES
+(3, 4);
+INSERT INTO ARTIST_ALBUM VALUES
+(3, 5);
+INSERT INTO ARTIST_ALBUM VALUES
+(3, 6);
+INSERT INTO ARTIST_ALBUM VALUES
+(4, 3);
+INSERT INTO ARTIST_ALBUM VALUES
+(4, 4);
+INSERT INTO ARTIST_ALBUM VALUES
+(4, 5);
+INSERT INTO ARTIST_ALBUM VALUES
+(4, 6);
+INSERT INTO ARTIST_ALBUM VALUES
+(5, 7);
+INSERT INTO ARTIST_ALBUM VALUES
+(5, 14);
+INSERT INTO ARTIST_ALBUM VALUES
+(7, 7);
+INSERT INTO ARTIST_ALBUM VALUES
+(8, 8);
+INSERT INTO ARTIST_ALBUM VALUES
+(8, 9);
+INSERT INTO ARTIST_ALBUM VALUES
+(8, 10);
+INSERT INTO ARTIST_ALBUM VALUES
+(9, 11);
+INSERT INTO ARTIST_ALBUM VALUES
+(10, 12);
+INSERT INTO ARTIST_ALBUM VALUES
+(11, 13);
+INSERT INTO ARTIST_ALBUM VALUES
+(12, 14);
+INSERT INTO ARTIST_ALBUM VALUES
+(13, 14);
+INSERT INTO ARTIST_ALBUM VALUES
+(14, 14);
+INSERT INTO ARTIST_ALBUM VALUES
+(15, 15);
+INSERT INTO ARTIST_ALBUM VALUES
+(16, 16);
+INSERT INTO ARTIST_ALBUM VALUES
+(17, 17);
+INSERT INTO ARTIST_ALBUM VALUES
+(19, 18);
+INSERT INTO ARTIST_ALBUM VALUES
+(20, 19);
+
+/* information on creators of audiobooks in the database*/
+INSERT INTO AUTHOR_BOOK VALUES
+(1, 9);
+INSERT INTO AUTHOR_BOOK VALUES
+(2, 14);
+INSERT INTO AUTHOR_BOOK VALUES
+(3, 15);
+INSERT INTO AUTHOR_BOOK VALUES
+(4, 1);
+INSERT INTO AUTHOR_BOOK VALUES
+(5, 13);
+INSERT INTO AUTHOR_BOOK VALUES
+(6, 3);
+INSERT INTO AUTHOR_BOOK VALUES
+(7, 4);
+INSERT INTO AUTHOR_BOOK VALUES
+(8, 2);
+INSERT INTO AUTHOR_BOOK VALUES
+(9, 20);
+INSERT INTO AUTHOR_BOOK VALUES
+(10, 6);
+INSERT INTO AUTHOR_BOOK VALUES
+(11, 10);
+INSERT INTO AUTHOR_BOOK VALUES
+(12, 10);
+INSERT INTO AUTHOR_BOOK VALUES
+(13, 19);
+INSERT INTO AUTHOR_BOOK VALUES
+(14, 7);
+INSERT INTO AUTHOR_BOOK VALUES
+(15, 11);
+INSERT INTO AUTHOR_BOOK VALUES
+(16, 8);
+INSERT INTO AUTHOR_BOOK VALUES
+(17, 12);
+INSERT INTO AUTHOR_BOOK VALUES
+(18, 5);
+INSERT INTO AUTHOR_BOOK VALUES
+(19, 18);
+INSERT INTO AUTHOR_BOOK VALUES
+(20, 4);
+
+/* information on directors of movies in the database*/
+INSERT INTO DIRECTED VALUES
+(1, 5);
+INSERT INTO DIRECTED VALUES
+(2, 6);
+INSERT INTO DIRECTED VALUES
+(3, 7);
+INSERT INTO DIRECTED VALUES
+(4, 15);
+INSERT INTO DIRECTED VALUES
+(5, 17);
+INSERT INTO DIRECTED VALUES
+(6, 10);
+INSERT INTO DIRECTED VALUES
+(7, 5);
+INSERT INTO DIRECTED VALUES
+(8, 1);
+INSERT INTO DIRECTED VALUES
+(9, 4);
+INSERT INTO DIRECTED VALUES
+(10, 1);
+INSERT INTO DIRECTED VALUES
+(11, 18);
+INSERT INTO DIRECTED VALUES
+(12, 9);
+INSERT INTO DIRECTED VALUES
+(13, 11);
+INSERT INTO DIRECTED VALUES
+(14, 13);
+INSERT INTO DIRECTED VALUES
+(15, 20);
+INSERT INTO DIRECTED VALUES
+(16, 8);
+INSERT INTO DIRECTED VALUES
+(17, 15);
+INSERT INTO DIRECTED VALUES
+(18, 16);
+INSERT INTO DIRECTED VALUES
+(19, 3);
+INSERT INTO DIRECTED VALUES
+(20, 4);
+
+/* information on actors in movies in the database*/
+INSERT INTO CAST VALUES
+(1, 1, true, false, false);
+INSERT INTO CAST VALUES
+(2, 3, true, false, false);
+INSERT INTO CAST VALUES
+(3, 8, true, false, false);
+INSERT INTO CAST VALUES
+(4, 5, true, false, false);
+INSERT INTO CAST VALUES
+(5, 15, true, false, false);
+INSERT INTO CAST VALUES
+(6, 4, true, false, false);
+INSERT INTO CAST VALUES
+(7, 14, true, false, false);
+INSERT INTO CAST VALUES
+(8, 12, true, false, false);
+INSERT INTO CAST VALUES
+(9, 20, true, false, false);
+INSERT INTO CAST VALUES
+(10, 18, true, true, true);
+INSERT INTO CAST VALUES
+(11, 2, true, false, false);
+INSERT INTO CAST VALUES
+(12, 7, true, false, false);
+INSERT INTO CAST VALUES
+(13, 10, false, false, true);
+INSERT INTO CAST VALUES
+(14, 6,true, false, false);
+INSERT INTO CAST VALUES
+(15, 3, true, false, false);
+INSERT INTO CAST VALUES
+(16, 10, false, true, false);
+INSERT INTO CAST VALUES
+(17, 13, true,false, false);
+INSERT INTO CAST VALUES
+(18, 1, false, true, false);
+INSERT INTO CAST VALUES
+(19, 16, false, false, true);
+INSERT INTO CAST VALUES
+(20, 11, true, false, false);
+
+/* information on songs on albums in the database*/
+INSERT INTO TRACK_ON_ALBUM VALUES
+(1, 1);
+INSERT INTO TRACK_ON_ALBUM VALUES
+(2, 2);
+INSERT INTO TRACK_ON_ALBUM VALUES
+(3, 3);
+INSERT INTO TRACK_ON_ALBUM VALUES
+(4, 4);
+INSERT INTO TRACK_ON_ALBUM VALUES
+(5, 5);
+INSERT INTO TRACK_ON_ALBUM VALUES
+(6, 7);
+INSERT INTO TRACK_ON_ALBUM VALUES
+(7, 8);
+INSERT INTO TRACK_ON_ALBUM VALUES
+(8, 9);
+INSERT INTO TRACK_ON_ALBUM VALUES
+(9, 10);
+INSERT INTO TRACK_ON_ALBUM VALUES
+(10, 11);
+INSERT INTO TRACK_ON_ALBUM VALUES
+(11, 12);
+INSERT INTO TRACK_ON_ALBUM VALUES
+(12, 13);
+INSERT INTO TRACK_ON_ALBUM VALUES
+(13, 14);
+INSERT INTO TRACK_ON_ALBUM VALUES
+(14, 15);
+INSERT INTO TRACK_ON_ALBUM VALUES
+(16, 1);
+INSERT INTO TRACK_ON_ALBUM VALUES
+(16, 16);
+INSERT INTO TRACK_ON_ALBUM VALUES
+(17, 17);
+INSERT INTO TRACK_ON_ALBUM VALUES
+(18, 18);
+INSERT INTO TRACK_ON_ALBUM VALUES
+(19, 19);
+INSERT INTO TRACK_ON_ALBUM VALUES
+(20, 20);
+
+/* information on chapters of audiobooks in the database*/
+INSERT INTO CHAPTER VALUES
+(16, "Chapter 1: The Beginning");
+INSERT INTO CHAPTER VALUES
+(16, "Chapter 2");
+INSERT INTO CHAPTER VALUES
+(16, "Chapter 3");
+INSERT INTO CHAPTER VALUES
+(16, "Chapter 4");
+INSERT INTO CHAPTER VALUES
+(16, "Chapter 5");
+INSERT INTO CHAPTER VALUES
+(16, "Chapter 6");
+INSERT INTO CHAPTER VALUES
+(16, "Chapter 7");
+INSERT INTO CHAPTER VALUES
+(16, "Chapter 8");
+INSERT INTO CHAPTER VALUES
+(16, "Chapter 9");
+INSERT INTO CHAPTER VALUES
+(16, "Chapter 10: The Middle");
+INSERT INTO CHAPTER VALUES
+(16, "Chapter 11");
+INSERT INTO CHAPTER VALUES
+(16, "Chapter 12");
+INSERT INTO CHAPTER VALUES
+(16, "Chapter 13");
+INSERT INTO CHAPTER VALUES
+(16, "Chapter 14");
+INSERT INTO CHAPTER VALUES
+(16, "Chapter 15");
+INSERT INTO CHAPTER VALUES
+(16, "Chapter 16");
+INSERT INTO CHAPTER VALUES
+(16, "Chapter 17");
+INSERT INTO CHAPTER VALUES
+(16, "Chapter 18");
+INSERT INTO CHAPTER VALUES
+(16, "Chapter 19: The End");
+INSERT INTO CHAPTER VALUES
+(1, "Chapter 1");
+
+/* information on where media items are being stored*/
+INSERT INTO ITEM_STORAGE VALUES
+(1, 8, 12, "Movie");
+INSERT INTO ITEM_STORAGE VALUES
+(5, 2, 3, "Album");
+INSERT INTO ITEM_STORAGE VALUES
+(2, 1, 1, "Audiobook");
+INSERT INTO ITEM_STORAGE VALUES
+(19, 4, 50, "Movie");
+INSERT INTO ITEM_STORAGE VALUES
+(7, 3, 15, "Album");
+INSERT INTO ITEM_STORAGE VALUES
+(4, 6, 13, "Track");
+INSERT INTO ITEM_STORAGE VALUES
+(10, 14, 14, "Movie");
+INSERT INTO ITEM_STORAGE VALUES
+(20, 6, 34, "Album");
+INSERT INTO ITEM_STORAGE VALUES
+(15, 16, 32, "Audiobook");
+INSERT INTO ITEM_STORAGE VALUES
+(3, 12, 24, "Movie");
+INSERT INTO ITEM_STORAGE VALUES
+(5, 1, 10, "Album");
+INSERT INTO ITEM_STORAGE VALUES
+(9, 12, 33, "Track");
+INSERT INTO ITEM_STORAGE VALUES
+(14, 12, 52, "Movie");
+INSERT INTO ITEM_STORAGE VALUES
+(11, 11, 14, "Album");
+INSERT INTO ITEM_STORAGE VALUES
+(14, 6, 19, "Audiobook");
+INSERT INTO ITEM_STORAGE VALUES
+(16, 7, 52, "Movie");
+INSERT INTO ITEM_STORAGE VALUES
+(17, 10, 25, "Album");
+INSERT INTO ITEM_STORAGE VALUES
+(12, 15, 32, "Track");
+INSERT INTO ITEM_STORAGE VALUES
+(19, 12, 110, "Movie");
+INSERT INTO ITEM_STORAGE VALUES
+(13, 6, 154, "Album");
+
+/* information on where media items are checked out*/
+INSERT INTO CHECK_OUT VALUES
+("123456789", 1, true, "Movie", "10-27-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("123456789", 1, false, "Track", "10-28-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("123456789", 1, true, "Audiobook", "10-29-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("123456789", 1, true, "Album", "10-30-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("987654321", 1, false, "Movie", "10-31-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("987654321", 1, false, "Track", "11-01-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("987654321", 1, false, "Audiobook", "11-02-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("987654321", 1, true, "Album", "11-03-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("112233445", 2, true, "Movie", "11-04-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("112233445", 2, false, "Track", "11-05-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("112233445", 2, false, "Audiobook", "11-06-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("112233445", 2, false, "Album", "11-07-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("566778899", 10, true, "Movie", "11-08-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("987654321", 12, true, "Track", "11-09-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("987654321", 4, false, "Audiobook", "11-10-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("987654321", 3, false, "Album", "11-11-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("135792468", 20, false, "Movie", "11-12-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("135792468", 19, true, "Track", "11-13-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("135792468", 18, true, "Audiobook", "11-14-2021", false);
+INSERT INTO CHECK_OUT VALUES
+("135792468", 17, false, "Album", "11-15-2021", false);
+
+/* information on where employees work*/
+INSERT INTO EMPLOYEE_WORK VALUES
+("491967478", 1);
+INSERT INTO EMPLOYEE_WORK VALUES
+("601491634", 1);
+INSERT INTO EMPLOYEE_WORK VALUES
+("617555521", 2);
+INSERT INTO EMPLOYEE_WORK VALUES
+("758012569", 1);
+INSERT INTO EMPLOYEE_WORK VALUES
+("542115794", 3);
+INSERT INTO EMPLOYEE_WORK VALUES
+("352163197", 8);
+INSERT INTO EMPLOYEE_WORK VALUES
+("142780324", 12);
+INSERT INTO EMPLOYEE_WORK VALUES
+("207586220", 11);
+INSERT INTO EMPLOYEE_WORK VALUES
+("527752414", 4);
+INSERT INTO EMPLOYEE_WORK VALUES
+("192221316", 20);
+INSERT INTO EMPLOYEE_WORK VALUES
+("228341118", 19);
+INSERT INTO EMPLOYEE_WORK VALUES
+("490068875", 20);
+INSERT INTO EMPLOYEE_WORK VALUES
+("633889650", 15);
+INSERT INTO EMPLOYEE_WORK VALUES
+("219567610", 11);
+INSERT INTO EMPLOYEE_WORK VALUES
+("389620163", 1);
+INSERT INTO EMPLOYEE_WORK VALUES
+("023626297", 10);
+INSERT INTO EMPLOYEE_WORK VALUES
+("164036101", 2);
+INSERT INTO EMPLOYEE_WORK VALUES
+("648054151", 4);
+INSERT INTO EMPLOYEE_WORK VALUES
+("236521810", 7);
+INSERT INTO EMPLOYEE_WORK VALUES
+("516609923", 14);

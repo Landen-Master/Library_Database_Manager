@@ -1,0 +1,41 @@
+/* information on first 20 Albums */
+INSERT INTO ALBUM VALUES
+(1, "Views", 4, 2, "Rap", 4874, 2016);
+INSERT INTO ALBUM VALUES
+(2, "Life After Death", 3, 7, "Rap", 7239, 1997);
+INSERT INTO ALBUM VALUES
+(3, "A Night At The Opera", 20, 50, "Rap", 2588, null);
+INSERT INTO ALBUM VALUES
+(4, "A Day at the Races", 5, 8, "Rock", null, null);
+INSERT INTO ALBUM VALUES
+(5, "Kids See Ghosts", 4, 4, null, null, 2018);
+INSERT INTO ALBUM VALUES
+(6, "Views", 8, 10, "Country", 20000, 1999);
+INSERT INTO ALBUM VALUES
+(7, "The College Dropout", 1, 0, "Hip-Hop", null, 2004);
+INSERT INTO ALBUM VALUES
+(8, "Moving Pictures", 0, 1, "Rock", 2403, null);
+INSERT INTO ALBUM VALUES
+(9, "The Chief", 10, 10, null, 3448, null);
+INSERT INTO ALBUM VALUES
+(10, "The Black Album", 50, 50, null, null, null);
+INSERT INTO ALBUM VALUES
+(11, "Anti", 4, 53, "Pop", 2616, 2016);
+INSERT INTO ALBUM VALUES
+(12, "Man on the Moon: The End of Day", 12, 400, "Rap", 3513, 2009);
+INSERT INTO ALBUM VALUES
+(13, "Man on the Moon II: The Legend of Mr. Rager", 10, 11, "Hip-Hop", 3726, 2011);
+INSERT INTO ALBUM VALUES
+(14, "Man on the Moon III: The Chosen", 35, 35, "Hip-Hop", 3497, 2020);
+INSERT INTO ALBUM VALUES
+(15, "Astroworld", 5, 3, "Rap", 3513, 2018);
+INSERT INTO ALBUM VALUES
+(16, "The Landen Master Spectacular Album", 1, 0, "Pop", 3513, 2021);
+INSERT INTO ALBUM VALUES
+(17, "DiCaprio 2", 2, 2, "Rap", 3009, 2018);
+INSERT INTO ALBUM VALUES
+(18, "Circles", 200, 200, "Hip-Hop", 2924, 2020);
+INSERT INTO ALBUM VALUES
+(19, "Because the Internet", 1, 3, "Hip-Hop", 3532, 2013);
+INSERT INTO ALBUM VALUES
+(20, "90059", 1, 1, "Rap", null, 2015);

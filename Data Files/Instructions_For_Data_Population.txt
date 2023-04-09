@@ -1,0 +1,32 @@
+All data files needed to recreate the database are here in the "data" folder. There are 3 sets of data, with Set 2
+referencing keys in set 1, and Set 2 referencing keys in set 2. Files can be executed in any order, as long as all
+files from Set 1 are executed before Set 2, and all files in Set 2 are executed before Set 3. The files in each set
+can be seen below.
+
+Set 1:	Data_Patron
+	Data_Library_Branch
+	Data_Artist
+	Data_Director
+	Data_Actor
+	Data_Author
+	Data_Album
+	Data_Movie
+	Data_Audiobook
+	Data_Track
+
+Set 2:	Data_Employee
+	Data_Order
+	Data_Artist_Song
+	Data_Artist_Album
+	Data_Author_Book
+	Data_Directed
+	Data_Cast
+	Data_Track_On_Album
+	Data_Chapter
+	Data_Item_Storage
+	Data_Check_Out
+
+Set 3:	Data_Employee_Work
+
+Alternatively, the file "populate.txt" contains all information set across all files, and can be loaded and executed
+instead of loading each file individually.

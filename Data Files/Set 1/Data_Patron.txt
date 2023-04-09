@@ -1,0 +1,41 @@
+/* information on first 20 Patrons */
+INSERT INTO PATRON VALUES
+("123456789", "Landen", "Master", "landen_master@hotmail.com", "7166 Brooks Close", "New Albany", "Ohio", "43054");
+INSERT INTO PATRON VALUES
+("987654321", "Adam", "Haag", "adam_haag@gmail.com", "529 Ravine Dr", "Aurora", "Ohio", "44202");
+INSERT INTO PATRON VALUES
+("112233445", "Evan", "Scott", null, null, null, null, null);
+INSERT INTO PATRON VALUES
+("566778899", "Ben", "Pacheco", "bpen@yahoo.com", null, "Painesville", "Ohio", "44077");
+INSERT INTO PATRON VALUES
+("135792468", "Hudson", "Hall", "hall.17@osu.edu", null, null, "Illinois", "60007");
+INSERT INTO PATRON VALUES
+("246813579", "Josh", "Badzik", null, "121 Woodland Road", null, "Pennsylvania", "15232");
+INSERT INTO PATRON VALUES
+("999999999", "Evan", "Scott", "escott259@insight.rr.com", null, null, null, null);
+INSERT INTO PATRON VALUES
+("420245682", "Shaun", "Loftin", "sloftin@deloit.com", "4900 Parkland Road", "Mason", null, "45034");
+INSERT INTO PATRON VALUES
+("694969463", "Dakota", "Getty", "bigballer@brand.com", "83 E 14th Ave", "Columbus", "Ohio", null);
+INSERT INTO PATRON VALUES
+("746771859", "James", "Whalen", "farmman@gmail.com", "1 Farm Lane", "Titusville", null, null);
+INSERT INTO PATRON VALUES
+("350983297", "Shannon", "McCalmont", "smacmon@anf.com", "87 E Lane", null, "Columbus", null);
+INSERT INTO PATRON VALUES
+("517193922", "Jeffery", "Bazos", "jb@amazon.com", "1 Amazon Lane", null, null, "98109");
+INSERT INTO PATRON VALUES
+("335269701", "Ethan", "Hach", "barber@hachshop.com", "7166 Brooks Close", "New Albany", "Ohio", "43054");
+INSERT INTO PATRON VALUES
+("382864581", "Glub", "Glub", "glubglub@glub.com", "172 E Frambes Ave", "Columbus", "Ohio", null);
+INSERT INTO PATRON VALUES
+("524174804", "Ryan", "Baldwin", "baldwinrocks@jpmorgan.com", "7 Spring Ave", "Lost Springs", null, "82229");
+INSERT INTO PATRON VALUES
+("085687155", "Cody", "Pestino", "cardinalsfan1@yahoo.com", "1538 Jefferson Ave", null, "Florida", "33139");
+INSERT INTO PATRON VALUES
+("553595249", "Alex", "Waters", null, "3041 Tipple Road", "Philadelphia", "Pennsylvania", "19146");
+INSERT INTO PATRON VALUES
+("014628030", "Mckenna", "Miller", null, "637 Clair Street", "Shambaugh",  "Iowa", "51651");
+INSERT INTO PATRON VALUES
+("201733081", "Sarah", "Laubach", null, "4042 Ocello Street", "San Diego", "California", "92111");
+INSERT INTO PATRON VALUES
+("422357620", "Sophia", "Banez", "glubina@gmail.com", "2892 Skinner Hollow Road", "Ontario", "Oregon", "97914");
